@@ -1,0 +1,12 @@
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/bin/Debug/net7.0/EmpMgt.Commons.deps.json
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/bin/Debug/net7.0/EmpMgt.Commons.dll
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/bin/Debug/net7.0/EmpMgt.Commons.pdb
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.csproj.AssemblyReference.cache
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.AssemblyInfoInputs.cache
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.AssemblyInfo.cs
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.dll
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/refint/EmpMgt.Commons.dll
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/EmpMgt.Commons.pdb
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Commons/obj/Debug/net7.0/ref/EmpMgt.Commons.dll
