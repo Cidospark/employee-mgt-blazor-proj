@@ -67,3 +67,14 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
+
+.imageThumbNail {
+    height:200px;
+    width: 100%;
+}
+.my-card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}

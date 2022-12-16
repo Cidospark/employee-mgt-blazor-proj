@@ -24,7 +24,7 @@ namespace EmpMgt.Web.Pages
 					FirstName = "Mary",
 					LastName = "Linglang",
 					Email = "maryl@sample.com",
-					DateOfBirth = new DateTime(1982, 19, 1),
+					DateOfBirth = new DateTime(1982, 1, 19),
 					Gender = Data.Enums.Gender.Female,
 					Department = new Department { DepartmentId = 1, DepartmentName = "Marketing" },
 					Photo = "images/mary.png"
@@ -60,7 +60,7 @@ namespace EmpMgt.Web.Pages
                     DateOfBirth = new DateTime(1984, 1, 6),
                     Gender = Data.Enums.Gender.Male,
                     Department = new Department { DepartmentId = 3, DepartmentName = "Product" },
-                    Photo = "images/sam.png"
+                    Photo = "images/sam.jpeg"
                 }
             };
 		}

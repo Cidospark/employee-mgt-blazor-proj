@@ -1,6 +1,43 @@
 ﻿<Properties StartupConfiguration="{41D311E2-7ED0-4188-9F36-F58887CB726D}|https">
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Data FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Pages/EmployeeList.razor">
+    <Files>
+      <File FileName="EmpMgt.Data/Entities/Employee.cs" />
+      <File FileName="EmpMgt.Data/EmpMgt.Data.csproj" />
+      <File FileName="EmpMgt.Commons/EmpMgt.Commons.csproj" />
+      <File FileName="EmpMgt.Web/EmpMgt.Web.csproj" />
+      <File FileName="EmpMgt.Web/Program.cs" />
+      <File FileName="EmpMgt.Web/Pages/Error.cshtml.cs" />
+      <File FileName="EmpMgt.Web/Shared/NavMenu.razor" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeList.razor" Line="13" Column="78" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" />
+      <File FileName="EmpMgt.Web/wwwroot/css/site.css" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorApp" expanded="True">
+            <Node name="EmpMgt.Data" expanded="True">
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="EmpMgt.Web" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="EmployeeList.razor" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="images" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Commons FirstBuild="True" />
 </Properties>
