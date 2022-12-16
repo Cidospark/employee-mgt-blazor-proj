@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/EmpMgt.Web.bundle.scp.css"
     },
     {
+      "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
@@ -55,6 +59,22 @@
     {
       "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/images/john.png",
+      "PackagePath": "staticwebassets/images/john.png"
+    },
+    {
+      "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/images/mary.png",
+      "PackagePath": "staticwebassets/images/mary.png"
+    },
+    {
+      "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/images/sam.jpeg",
+      "PackagePath": "staticwebassets/images/sam.jpeg"
+    },
+    {
+      "Id": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/wwwroot/images/sara.png",
+      "PackagePath": "staticwebassets/images/sara.png"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.EmpMgt.Web.Microsoft.AspNetCore.StaticWebAssets.props",

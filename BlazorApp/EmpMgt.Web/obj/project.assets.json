@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "EmpMgt.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/EmpMgt.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmpMgt.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EmpMgt.Data/1.0.0": {
+      "type": "project",
+      "path": "../EmpMgt.Data/EmpMgt.Data.csproj",
+      "msbuildProject": "../EmpMgt.Data/EmpMgt.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "EmpMgt.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/macbook/.nuget/packages/": {},
@@ -36,7 +55,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj": {
+              "projectPath": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,6 +4,63 @@
     "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/EmpMgt.Web.csproj": {}
   },
   "projects": {
+    "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj",
+        "projectName": "EmpMgt.Data",
+        "projectPath": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj",
+        "packagesPath": "/Users/macbook/.nuget/packages/",
+        "outputPath": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/macbook/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/EmpMgt.Web.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,7 +86,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj": {
+                "projectPath": "/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Data/EmpMgt.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
