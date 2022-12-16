@@ -8,14 +8,15 @@ namespace EmpMgt.Web.Pages
 	{
 		public IEnumerable<Employee> Employees { get; set; }
 
-        protected override Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
-            LoadEmployees();
-            return base.OnInitializedAsync();
+            await Task.Run(LoadEmployees);
         }
 
         private void LoadEmployees()
 		{
+            System.Threading.Thread.Sleep(2000);
+
 			Employees = new List<Employee>
 			{
 				new Employee
