@@ -1,5 +1,6 @@
 ﻿using System;
 using EmpMgt.Data.Entities;
+using EmpMgt.Data.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmpMgt.Data.Repositories
@@ -72,6 +73,24 @@ namespace EmpMgt.Data.Repositories
         {
             return await appDbContext.Employees
                 .FirstOrDefaultAsync(e => e.Email == email);
+        }
+
+        public async Task<IEnumerable<Employee>> Search(string name, Gender? gender)
+        {
+            IQueryable<Employee> query = appDbContext.Employees;
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(e => e.FirstName.Contains(name)
+                            || e.LastName.Contains(name));
+            }
+
+            if (gender != null)
+            {
+                query = query.Where(e => e.Gender == gender);
+            }
+
+            return await query.ToListAsync();
         }
     }
 }

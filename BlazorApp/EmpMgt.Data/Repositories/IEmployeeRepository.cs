@@ -1,5 +1,6 @@
 ﻿using System;
 using EmpMgt.Data.Entities;
+using EmpMgt.Data.Enums;
 
 namespace EmpMgt.Data.Repositories
 {
@@ -11,6 +12,7 @@ namespace EmpMgt.Data.Repositories
         Task<Employee> UpdateEmployee(Employee employee);
         Task<Employee> DeleteEmployee(int employeeId);
         Task<Employee> GetEmployeeByEmail(string email);
+        Task<IEnumerable<Employee>> Search(string name, Gender? gender);
     }
 }
 
