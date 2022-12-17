@@ -54,7 +54,7 @@ namespace EmpMgt.Data.Repositories
             return null;
         }
 
-        public async void DeleteEmployee(int employeeId)
+        public async Task<Employee> DeleteEmployee(int employeeId)
         {
             var result = await appDbContext.Employees
                 .FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
@@ -62,7 +62,10 @@ namespace EmpMgt.Data.Repositories
             {
                 appDbContext.Employees.Remove(result);
                 await appDbContext.SaveChangesAsync();
+                return result;
             }
+
+            return null;
         }
 
         public async Task<Employee> GetEmployeeByEmail(string email)
