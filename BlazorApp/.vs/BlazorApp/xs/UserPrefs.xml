@@ -1,5 +1,8 @@
 ﻿<Properties StartupConfiguration="{41D311E2-7ED0-4188-9F36-F58887CB726D}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Api FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Pages/EmployeeList.razor">
     <Files>
       <File FileName="EmpMgt.Data/Entities/Employee.cs" />
@@ -34,10 +37,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
