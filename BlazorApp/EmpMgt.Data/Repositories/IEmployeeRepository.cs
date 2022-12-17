@@ -10,6 +10,7 @@ namespace EmpMgt.Data.Repositories
         Task<Employee> AddEmployee(Employee employee);
         Task<Employee> UpdateEmployee(Employee employee);
         void DeleteEmployee(int employeeId);
+        Task<Employee> GetEmployeeByEmail(string email);
     }
 }
 
