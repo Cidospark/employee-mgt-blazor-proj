@@ -3,7 +3,7 @@ using EmpMgt.Data.Entities;
 
 namespace EmpMgt.Data.Repositories
 {
-	public class DepartmentRepository
+	public class DepartmentRepository: IDepartmentRepository
 	{
         private readonly AppDbContext appDbContext;
 
