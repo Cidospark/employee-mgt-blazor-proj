@@ -34,7 +34,7 @@ namespace EmpMgt.Web.Pages
 					Email = "maryl@sample.com",
 					DateOfBirth = new DateTime(1982, 1, 19),
 					Gender = Data.Enums.Gender.Female,
-					Department = deptList[0].DepartmentId,
+					DepartmentId = deptList[0].DepartmentId,
 					Photo = "images/mary.png"
 				},
                 new Employee
@@ -45,7 +45,7 @@ namespace EmpMgt.Web.Pages
                     Email = "johnl@sample.com",
                     DateOfBirth = new DateTime(1989, 10, 10),
                     Gender = Data.Enums.Gender.Male,
-                    Department = deptList[0].DepartmentId,
+                    DepartmentId = deptList[0].DepartmentId,
                     Photo = "images/john.png"
                 },
                 new Employee
@@ -56,7 +56,7 @@ namespace EmpMgt.Web.Pages
                     Email = "sarar@sample.com",
                     DateOfBirth = new DateTime(1994, 11, 1),
                     Gender = Data.Enums.Gender.Female,
-                    Department = deptList[1].DepartmentId,
+                    DepartmentId = deptList[1].DepartmentId,
                     Photo = "images/sara.png"
                 },
                 new Employee
@@ -67,7 +67,7 @@ namespace EmpMgt.Web.Pages
                     Email = "samf@sample.com",
                     DateOfBirth = new DateTime(1984, 1, 6),
                     Gender = Data.Enums.Gender.Male,
-                    Department = deptList[2].DepartmentId,
+                    DepartmentId = deptList[2].DepartmentId,
                     Photo = "images/sam.jpeg"
                 }
             };

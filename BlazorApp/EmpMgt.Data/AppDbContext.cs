@@ -32,7 +32,7 @@ namespace EmpMgt.Data
                     Email = "maryl@sample.com",
                     DateOfBirth = new DateTime(1982, 1, 19),
                     Gender = Data.Enums.Gender.Female,
-                    Department = 1,
+                    DepartmentId = 1,
                     Photo = "images/mary.png"
                 }
             );
@@ -46,7 +46,7 @@ namespace EmpMgt.Data
                    Email = "johnl@sample.com",
                    DateOfBirth = new DateTime(1989, 10, 10),
                    Gender = Data.Enums.Gender.Male,
-                   Department = 1,
+                   DepartmentId = 1,
                    Photo = "images/john.png"
                }
            );
@@ -60,7 +60,7 @@ namespace EmpMgt.Data
                    Email = "sarar@sample.com",
                    DateOfBirth = new DateTime(1994, 11, 1),
                    Gender = Data.Enums.Gender.Female,
-                   Department = 2,
+                   DepartmentId = 2,
                    Photo = "images/sara.png"
                }
            );
@@ -74,7 +74,7 @@ namespace EmpMgt.Data
                    Email = "samf@sample.com",
                    DateOfBirth = new DateTime(1984, 1, 6),
                    Gender = Data.Enums.Gender.Male,
-                   Department = 3,
+                   DepartmentId = 3,
                    Photo = "images/sam.jpeg"
                }
            );
