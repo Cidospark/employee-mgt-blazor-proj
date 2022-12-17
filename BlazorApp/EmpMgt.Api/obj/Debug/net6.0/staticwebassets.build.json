@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YRFRz9jy/e9lNZh74NPalv4C0hzdP7yxFNGQtFRNIWY=",
+  "Source": "EmpMgt.Api",
+  "BasePath": "_content/EmpMgt.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

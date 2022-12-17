@@ -68,7 +68,7 @@ namespace EmpMgt.Data
             modelBuilder.Entity<Employee>().HasData(
                new Employee
                {
-                   EmployeeId = 1,
+                   EmployeeId = 4,
                    FirstName = "Sam",
                    LastName = "Fin",
                    Email = "samf@sample.com",
