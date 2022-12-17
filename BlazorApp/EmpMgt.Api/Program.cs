@@ -1,10 +1,14 @@
 ﻿using EmpMgt.Data;
+using EmpMgt.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default"),
     x => x.MigrationsAssembly("EmpMgt.Data")));
+
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
 // Add services to the container.
 
