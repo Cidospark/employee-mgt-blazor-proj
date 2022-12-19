@@ -1,46 +1,43 @@
-﻿<Properties StartupConfiguration="{A0CD85FF-5653-4BA4-92C7-E9D520AFAA1D}|https">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{41D311E2-7ED0-4188-9F36-F58887CB726D}|https">
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Pages/EmployeeListBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Services/EmployeeService.cs">
     <Files>
-      <File FileName="EmpMgt.Data/Entities/Employee.cs" Line="19" Column="1" />
-      <File FileName="EmpMgt.Data/EmpMgt.Data.csproj" />
-      <File FileName="EmpMgt.Commons/EmpMgt.Commons.csproj" />
-      <File FileName="EmpMgt.Web/EmpMgt.Web.csproj" Line="1" Column="1" />
-      <File FileName="EmpMgt.Web/Program.cs" />
-      <File FileName="EmpMgt.Web/Pages/EmployeeList.razor" Line="9" Column="24" />
-      <File FileName="EmpMgt.Web/wwwroot/css/site.css" Line="84" Column="18" />
-      <File FileName="EmpMgt.Data/AppDbContext.cs" Line="24" Column="1" />
-      <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" Line="70" Column="44" />
-      <File FileName="EmpMgt.Api/Program.cs" Line="27" Column="27" />
+      <File FileName="EmpMgt.Web/Services/EmployeeService.cs" Line="4" Column="27" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Api/Properties/launchSettings.json" Line="25" Column="48" />
+      <File FileName="EmpMgt.Web/Program.cs" Line="12" Column="67" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlazorApp" expanded="True">
             <Node name="EmpMgt.Api" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
+              <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="EmpMgt.Data" expanded="True">
-              <Node name="Migrations" expanded="True" />
-            </Node>
-            <Node name="EmpMgt.Web" expanded="True">
+            <Node name="EmpMgt.Web" expanded="True" selected="True">
               <Node name="Pages" expanded="True">
-                <Node name="EmployeeListBase.cs" selected="True" />
                 <Node name="Error.cshtml" expanded="True" />
               </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="BlazorApp" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

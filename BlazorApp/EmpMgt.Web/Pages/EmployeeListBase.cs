@@ -1,16 +1,21 @@
 ﻿using System;
 using EmpMgt.Data.Entities;
+using EmpMgt.Web.Services;
 using Microsoft.AspNetCore.Components;
 
 namespace EmpMgt.Web.Pages
 {
 	public class EmployeeListBase : ComponentBase
 	{
+        [Inject]
+        public IEmployeeService EmployeeService { get; set; }
+
 		public IEnumerable<Employee> Employees { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            await Task.Run(LoadEmployees);
+            //await Task.Run(LoadEmployees);
+            Employees = await EmployeeService.GetEmployees();
         }
 
         private void LoadEmployees()
