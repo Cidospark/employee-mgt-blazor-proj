@@ -9,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
-builder.Services.AddHttpClient<IEmployeeService, EmployeeService>();
+//builder.Services.AddScoped<IApiClient, ApiClient>();
+builder.Services.AddHttpClient<IApiClient, ApiClient>();
 
 
 var app = builder.Build();

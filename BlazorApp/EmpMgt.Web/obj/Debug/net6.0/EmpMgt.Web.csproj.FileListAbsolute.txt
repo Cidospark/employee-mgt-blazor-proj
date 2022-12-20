@@ -18,6 +18,7 @@
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/System.Drawing.Common.dll
 /Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll

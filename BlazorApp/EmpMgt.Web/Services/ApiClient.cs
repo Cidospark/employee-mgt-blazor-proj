@@ -7,11 +7,11 @@ using Newtonsoft.Json;
 
 namespace EmpMgt.Web.Services
 {
-	public class BaseService : IBaseService
-	{
+	public class ApiClient : IApiClient
+    {
         private readonly IHttpClientFactory httpClient;
 
-        public BaseService(IHttpClientFactory httpClient)
+        public ApiClient(IHttpClientFactory httpClient)
 		{
             this.httpClient = httpClient;
         }
@@ -83,7 +83,16 @@ namespace EmpMgt.Web.Services
                 apiResponse = await client.SendAsync(message);
                 var apiContent = await apiResponse.Content.ReadAsStringAsync();
 
-                var result = JsonConvert.DeserializeObject<T>(apiContent);
+                var res = new ResponseModel<string>
+                {
+                    DisplayMessage = "success",
+                    ErrorMessages = null,
+                    IsSuccess = true,
+                    Result = apiContent
+                };
+
+                var resStr = JsonConvert.SerializeObject(res);
+                var result = JsonConvert.DeserializeObject<T>(resStr);
                 return result;
             }
             catch (Exception ex)
@@ -95,7 +104,9 @@ namespace EmpMgt.Web.Services
                     IsSuccess = false
                 };
 
-                return (T) Convert.ChangeType(err,typeof(T));
+                var res = JsonConvert.SerializeObject(err);
+                var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
+                return apiResponseDto;
             }
         }
     }

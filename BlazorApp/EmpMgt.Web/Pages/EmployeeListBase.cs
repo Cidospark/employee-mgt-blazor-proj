@@ -1,5 +1,6 @@
 ﻿using System;
 using EmpMgt.Data.Entities;
+using EmpMgt.Web.Models;
 using EmpMgt.Web.Services;
 using Microsoft.AspNetCore.Components;
 
@@ -10,12 +11,23 @@ namespace EmpMgt.Web.Pages
         [Inject]
         public IEmployeeService EmployeeService { get; set; }
 
+        [Inject]
+        NavigationManager navigationManager { get; set; }
+
 		public IEnumerable<Employee> Employees { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
             //await Task.Run(LoadEmployees);
-            Employees = await EmployeeService.GetEmployees();
+            var result = await EmployeeService.GetEmployees();
+
+            if (result.DisplayMessage.Equals("Error"))
+                navigationManager.NavigateTo("Error");
+
+            if (result.IsSuccess)
+                Employees = result.Result;
+            else
+                Employees = null;
         }
 
         private void LoadEmployees()
