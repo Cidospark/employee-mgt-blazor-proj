@@ -3,7 +3,7 @@ using EmpMgt.Data.Entities;
 
 namespace EmpMgt.Web.Services
 {
-	public interface IEmployeeService
+	public interface IEmployeeService<T>: IBaseService<T>
     {
         Task<IEnumerable<Employee>> GetEmployees();
     }

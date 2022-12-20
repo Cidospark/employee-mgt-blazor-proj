@@ -7,15 +7,13 @@ using Newtonsoft.Json;
 
 namespace EmpMgt.Web.Services
 {
-	public class BaseService<T> : IBaseService<T>
+	public class BaseService : IBaseService
 	{
         private readonly IHttpClientFactory httpClient;
-        public ResponseModel<T> responseModel { get; set; }
 
         public BaseService(IHttpClientFactory httpClient)
 		{
             this.httpClient = httpClient;
-            this.responseModel = new ResponseModel<T>();
         }
 
         public void Dispose()
@@ -23,7 +21,7 @@ namespace EmpMgt.Web.Services
             GC.SuppressFinalize(true);
         }
 
-        public async Task<T> MakeRequestAsync(ApiRequestModel apiRequestModel)
+        public async Task<T> MakeRequestAsync<T>(ApiRequestModel apiRequestModel)
         {
             try
             {
@@ -90,16 +88,14 @@ namespace EmpMgt.Web.Services
             }
             catch (Exception ex)
             {
-                var err = new ResponseModel<T>
+                var err = new ResponseModel<string>
                 {
                     DisplayMessage = "Error",
                     ErrorMessages = new List<string> { Convert.ToString(ex.Message) },
                     IsSuccess = false
                 };
 
-                var res = JsonConvert.SerializeObject(err);
-                var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
-                return apiResponseDto;
+                return (T) Convert.ChangeType(err,typeof(T));
             }
         }
     }

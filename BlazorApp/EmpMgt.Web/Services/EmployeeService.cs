@@ -9,7 +9,7 @@ namespace EmpMgt.Web.Services
 	{
         private readonly HttpClient httpClient;
 
-        public EmployeeService(HttpClient httpClient)
+        public EmployeeService()
 		{
             this.httpClient = httpClient;
         }
