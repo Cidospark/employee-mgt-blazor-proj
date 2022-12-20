@@ -24,8 +24,10 @@
     <None Remove="Services\" />
     <None Remove="System.Net.Http.Json" />
     <None Remove="Models\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 </Project>
