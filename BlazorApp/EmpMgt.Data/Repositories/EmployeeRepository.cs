@@ -21,8 +21,10 @@ namespace EmpMgt.Data.Repositories
 
         public async Task<Employee> GetEmployee(int employeeId)
         {
-            return await appDbContext.Employees
+            var res =  await appDbContext.Employees
+                .Include(x => x.Department)
                 .FirstOrDefaultAsync(e => e.EmployeeId == employeeId);
+            return res;
         }
 
         public async Task<Employee> AddEmployee(Employee employee)
