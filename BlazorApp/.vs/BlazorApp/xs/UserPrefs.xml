@@ -1,13 +1,28 @@
 ﻿<Properties StartupConfiguration="{41D311E2-7ED0-4188-9F36-F58887CB726D}|https" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.EmpMgt.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Services/EmployeeService.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/appsettings.json">
     <Files>
-      <File FileName="EmpMgt.Web/Services/EmployeeService.cs" Line="4" Column="27" />
+      <File FileName="EmpMgt.Web/Program.cs" Line="26" Column="72" IsPinned="True" />
+      <File FileName="EmpMgt.Web/Services/EmployeeService.cs" Line="22" Column="1" />
       <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" Line="1" Column="1" />
-      <File FileName="EmpMgt.Api/Properties/launchSettings.json" Line="25" Column="48" />
-      <File FileName="EmpMgt.Web/Program.cs" Line="12" Column="67" />
+      <File FileName="EmpMgt.Web/Models/ResponseModel.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Models/ApiRequestModel.cs" Line="17" Column="1" />
+      <File FileName="EmpMgt.Data/Enums/ApiType.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/appsettings.json" Line="11" Column="39" />
+      <File FileName="EmpMgt.Web/Services/IEmployeeService.cs" Line="7" Column="35" />
+      <File FileName="EmpMgt.Web/Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/Error.cshtml.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeList.razor" Line="1" Column="1" />
+      <File FileName="EmpMgt.Api/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Services/ApiClient.cs" Line="84" Column="1" />
+      <File FileName="EmpMgt.Web/Properties/launchSettings.json" Line="22" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,26 +31,21 @@
             <Node name="EmpMgt.Api" expanded="True">
               <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="EmpMgt.Web" expanded="True" selected="True">
+            <Node name="EmpMgt.Data" expanded="True">
+              <Node name="Enums" expanded="True" />
+            </Node>
+            <Node name="EmpMgt.Web" expanded="True">
+              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Error.cshtml" expanded="True" />
               </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="BlazorApp" expanded="True" />
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
 </Properties>

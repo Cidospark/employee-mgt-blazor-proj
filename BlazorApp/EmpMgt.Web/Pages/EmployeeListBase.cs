@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using EmpMgt.Data.Entities;
 using EmpMgt.Web.Models;
 using EmpMgt.Web.Services;
@@ -8,8 +9,10 @@ namespace EmpMgt.Web.Pages
 {
 	public class EmployeeListBase : ComponentBase
 	{
-        [Inject]
-        public IEmployeeService EmployeeService { get; set; }
+        //[Inject]
+        //public IEmployeeService EmployeeService { get; set; }
+        [Inject] private HttpClient httpClient { get; set; }
+        [Inject] private IConfiguration config { get; set; }
 
         [Inject]
         NavigationManager navigationManager { get; set; }
@@ -19,13 +22,18 @@ namespace EmpMgt.Web.Pages
         protected override async Task OnInitializedAsync()
         {
             //await Task.Run(LoadEmployees);
-            var result = await EmployeeService.GetEmployees();
+            //var result = await EmployeeService.GetEmployees();
+            var result = await httpClient.GetAsync(config.GetSection("API:BaseURL").Value + "/api/Employees");
 
-            if (result.DisplayMessage.Equals("Error"))
+
+            if (!result.IsSuccessStatusCode)
                 navigationManager.NavigateTo("Error");
 
-            if (result.IsSuccess)
-                Employees = result.Result;
+
+            if (result.IsSuccessStatusCode)
+            {
+                Employees = await result.Content.ReadFromJsonAsync<IEnumerable<Employee>>();
+            }
             else
                 Employees = null;
         }
@@ -92,3 +100,18 @@ namespace EmpMgt.Web.Pages
 	}
 }
 
+
+
+//private List<Resource> items = new();
+//[Inject] private HttpClient httpClient { get; set; }
+//[Inject] private IConfiguration config { get; set; }
+
+//protected override async Task OnInitializedAsync()
+//{
+//    var result = await httpClient.GetAsync(config["apiUrl"] + "/api/Resource");
+
+//    if (result.IsSuccessStatusCode)
+//    {
+//        items = await result.Content.ReadFromJsonAsync<List<Resource>>();
+//    }
+//}

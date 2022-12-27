@@ -11,6 +11,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 //builder.Services.AddScoped<IApiClient, ApiClient>();
 builder.Services.AddHttpClient<IApiClient, ApiClient>();
+builder.Services.AddCors();
 
 
 var app = builder.Build();
@@ -22,7 +23,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
