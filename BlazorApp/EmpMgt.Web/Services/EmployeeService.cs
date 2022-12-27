@@ -20,9 +20,19 @@ namespace EmpMgt.Web.Services
 
         public async Task<ResponseModel<IEnumerable<Employee>>> GetEmployees()
         {
-            return await this.MakeRequestAsync<ResponseModel<IEnumerable<Employee>>>(new ApiRequestModel
+            return await this.MakeRequestAsync<IEnumerable<Employee>>(new ApiRequestModel
             {
                 Url = config.GetSection("API:BaseURL").Value,
+                ApiType = ApiType.GET
+            });
+        }
+
+
+        public async Task<ResponseModel<Employee>> GetEmployee(int id)
+        {
+            return await this.MakeRequestAsync<Employee>(new ApiRequestModel
+            {
+                Url = config.GetSection("API:BaseURL").Value + $"/api/employees/{id}",
                 ApiType = ApiType.GET
             });
         }

@@ -7,6 +7,7 @@ namespace EmpMgt.Web.Services
 	public interface IEmployeeService: IApiClient
     {
         Task<ResponseModel<IEnumerable<Employee>>> GetEmployees();
+        Task<ResponseModel<Employee>> GetEmployee(int id);
     }
 }
 

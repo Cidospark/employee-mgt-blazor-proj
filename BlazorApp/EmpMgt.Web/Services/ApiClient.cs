@@ -22,7 +22,7 @@ namespace EmpMgt.Web.Services
             GC.SuppressFinalize(true);
         }
 
-        public async Task<T> MakeRequestAsync<T>(ApiRequestModel apiRequestModel)
+        public async Task<ResponseModel<T>> MakeRequestAsync<T>(ApiRequestModel apiRequestModel)
         {
             try
             {
@@ -84,30 +84,32 @@ namespace EmpMgt.Web.Services
                 apiResponse = await client.SendAsync(message);
                 var apiContent = await apiResponse.Content.ReadAsStringAsync();
 
-                var res = new ResponseModel<string>
+                //var resStr = JsonConvert.SerializeObject(res);
+                var result = JsonConvert.DeserializeObject<T>(apiContent);
+
+
+                var res = new ResponseModel<T>
                 {
                     DisplayMessage = "success",
                     ErrorMessages = null,
                     IsSuccess = true,
-                    Result = apiContent
+                    Result = result
                 };
 
-                var resStr = JsonConvert.SerializeObject(res);
-                var result = JsonConvert.DeserializeObject<T>(resStr);
-                return result;
+                return res;
             }
             catch (Exception ex)
             {
-                var err = new ResponseModel<string>
+                var err = new ResponseModel<T>
                 {
                     DisplayMessage = "Error",
                     ErrorMessages = new List<string> { Convert.ToString(ex.Message) },
                     IsSuccess = false
                 };
 
-                var res = JsonConvert.SerializeObject(err);
-                var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
-                return apiResponseDto;
+                //var res = JsonConvert.SerializeObject(err);
+                //var apiResponseDto = JsonConvert.DeserializeObject<T>(res);
+                return err;
             }
         }
     }
