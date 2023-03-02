@@ -30,6 +30,25 @@ namespace EmpMgt.Web.Pages
 
 			}
 		}
-	}
+        protected string Colour { get; set; } = "background-color:white";
+        protected string ButtonText { get; set; } = "Hide Footer";
+        protected string CssClass { get; set; } = null;
+
+        protected void Button_Click()
+        {
+            if (ButtonText == "Hide Footer")
+            {
+                ButtonText = "Show Footer";
+                CssClass = "HideFooter";
+            }
+            else
+            {
+                CssClass = null;
+                ButtonText = "Hide Footer";
+            }
+        }
+
+        public string Description { get; set; } = string.Empty;
+    }
 }
 

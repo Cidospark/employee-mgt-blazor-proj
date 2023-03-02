@@ -6,7 +6,7 @@
         <div class="card">
             @if (Employee == null)
             {
-                    <p>Employee with Id: @Id was not found! </p>
+                <p>Employee with Id: @Id was not found! </p>
             }
             else
             {
@@ -14,19 +14,30 @@
                     <h1>@Employee.FirstName @Employee.LastName</h1>
                 </div>
 
-                <div class="card-body text-center">
+                <div class="card-body text-center" @bind-style="Colour" @bind-style:event="onchange">
+                    <b>Colour :</b> <input @bind="Colour" />
                     <img class="card-img-top" src="@Employee.Photo" />
 
                     <h4>Employee ID : @Employee.EmployeeId</h4>
                     <h4>Email : @Employee.Email</h4>
-                    <h4>Department : @Employee.Department.DepartmentName</h4>
+                    @if (Employee.Department != null)
+                    {
+                        <h4>Department : @Employee.Department.DepartmentName</h4>
+                    }
                 </div>
-                <div class="card-footer text-center">
+                <button class="btn btn-primary" @onclick="@Button_Click">@ButtonText</button>
+                <div class="card-footer text-center  @CssClass">
                     <a href="/" class="btn btn-primary">Back</a>
                     <a href="#" class="btn btn-primary">Edit</a>
                     <a href="#" class="btn btn-danger">Delete</a>
                 </div>
             }
+        </div>
+        <div>
+            <textarea @bind="Description" @bind:event="oninput" />
+        </div>
+        <div>
+            Count : @Description.Length
         </div>
     </div>
 </div>

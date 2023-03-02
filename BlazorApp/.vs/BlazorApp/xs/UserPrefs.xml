@@ -1,4 +1,43 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="Multiple Projects">
+﻿<Properties StartupConfiguration="Multiple Projects" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Pages/EmployeeDetails.razor">
+    <Files>
+      <File FileName="EmpMgt.Data/Repositories/EmployeeRepository.cs" Line="23" Column="1" />
+      <File FileName="EmpMgt.Web/Services/EmployeeService.cs" Line="18" Column="33" />
+      <File FileName="EmpMgt.Web/Services/IEmployeeService.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Services/ApiClient.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeList.razor" Line="1" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeDetails.razor" Line="20" Column="1" />
+      <File FileName="EmpMgt.Web/Pages/EmployeeDetailsBase.cs" Line="26" Column="1" />
+      <File FileName="EmpMgt.Api/Controllers/EmployeesController.cs" Line="42" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorApp" expanded="True">
+            <Node name="EmpMgt.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="EmpMgt.Data" expanded="True">
+              <Node name="Repositories" expanded="True" />
+            </Node>
+            <Node name="EmpMgt.Web" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="EmployeeDetails.razor" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
@@ -7,34 +46,7 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmpMgt.Web/Pages/EmployeeListBase.cs">
-    <Files>
-      <File FileName="EmpMgt.Web/Pages/EmployeeListBase.cs" Line="26" Column="1" />
-      <File FileName="EmpMgt.Web/Pages/EmployeeList.razor" Line="1" Column="1" />
-      <File FileName="EmpMgt.Api/Controllers/EmployeesController.cs" Line="19" Column="14" />
-      <File FileName="EmpMgt.Web/Services/EmployeeService.cs" Line="25" Column="61" />
-      <File FileName="EmpMgt.Web/appsettings.json" Line="14" Column="2" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BlazorApp" expanded="True" selected="True" />
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="BlazorApp" expanded="True" />
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.EmpMgt.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

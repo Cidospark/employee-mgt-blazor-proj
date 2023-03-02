@@ -79,6 +79,8 @@ a, .btn-link {
     align-items: start;
 }
 
+
+
 .spinner {
     border: 5px solid silver;
     border-top: 5px solid #337AB7;
@@ -99,4 +101,8 @@ a, .btn-link {
     100% {
         transform: rotate(360deg)
     }
+}
+
+.HideFooter {
+    display: none;
 }
