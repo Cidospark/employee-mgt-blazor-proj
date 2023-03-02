@@ -17,7 +17,9 @@ namespace EmpMgt.Web.Pages
         [Inject]
         NavigationManager navigationManager { get; set; }
 
-		public IEnumerable<Employee> Employees { get; set; }
+        public bool ShowFooter { get; set; } = true;
+
+        public IEnumerable<Employee> Employees { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

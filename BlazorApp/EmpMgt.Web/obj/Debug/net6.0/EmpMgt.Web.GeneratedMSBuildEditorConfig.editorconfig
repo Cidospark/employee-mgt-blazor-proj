@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/Pages/DisplayEmployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlzcGxheUVtcGxveWVlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/Pages/EmployeeDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
