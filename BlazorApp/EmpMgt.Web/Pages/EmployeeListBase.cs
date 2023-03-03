@@ -21,6 +21,16 @@ namespace EmpMgt.Web.Pages
 
         public IEnumerable<Employee> Employees { get; set; }
 
+        public int SelectedEmployeeCount { get; set; } = 0;
+
+        protected void EmployeeSelectionChange(bool isSelected)
+        {
+            if (isSelected)
+                SelectedEmployeeCount++;
+            else
+                SelectedEmployeeCount--;
+        }
+
         protected override async Task OnInitializedAsync()
         {
             //await Task.Run(LoadEmployees);
