@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlzcGxheUVtcGxveWVlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/Pages/EditEmployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEVtcGxveWVlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/macbook/Projects/Repos/2022/employee-mgt-blazor-proj/BlazorApp/EmpMgt.Web/Pages/EmployeeDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
